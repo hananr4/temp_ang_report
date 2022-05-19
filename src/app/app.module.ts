@@ -8,6 +8,8 @@ import { AuthService, ScreenService, AppInfoService } from './shared/services';
 import { UnauthenticatedContentModule } from './unauthenticated-content';
 import { AppRoutingModule } from './app-routing.module';
 
+import { DxReportViewerModule } from 'devexpress-reporting-angular';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -23,7 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
     ChangePasswordFormModule,
     LoginFormModule,
     UnauthenticatedContentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DxReportViewerModule,
   ],
   providers: [
     AuthService,
