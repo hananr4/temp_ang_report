@@ -8,11 +8,17 @@ import { AuthService, ScreenService, AppInfoService } from './shared/services';
 import { UnauthenticatedContentModule } from './unauthenticated-content';
 import { AppRoutingModule } from './app-routing.module';
 
-import { DxReportViewerModule } from 'devexpress-reporting-angular';
+import { DevextremeModule } from './devextreme.module';
+import { HomeComponent } from './pages/home/home.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { TasksComponent } from './pages/tasks/tasks.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ProfileComponent,
+    TasksComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,8 +31,8 @@ import { DxReportViewerModule } from 'devexpress-reporting-angular';
     ChangePasswordFormModule,
     LoginFormModule,
     UnauthenticatedContentModule,
+    DevextremeModule,
     AppRoutingModule,
-    DxReportViewerModule,
   ],
   providers: [
     AuthService,

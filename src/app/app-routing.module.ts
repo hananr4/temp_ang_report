@@ -50,13 +50,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true }), DxDataGridModule, DxFormModule],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   providers: [AuthGuardService],
   exports: [RouterModule],
   declarations: [
-    HomeComponent,
-    ProfileComponent,
-    TasksComponent
+    
   ]
 })
 export class AppRoutingModule { }
